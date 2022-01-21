@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  Link CSS-->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Título da Página na Aba-->
   <title>ReportAm</title>
 </head>
+
 <body>
-  
+  <!-- Cabeçalho e titulo da pagina -->
   <div class="container">
     <img src="/img/Reportam.png" alt="" height="">
 
@@ -21,46 +25,157 @@
   </nav>
   <br>
 <main>
+
+  <div>
   <h1>Faça o seu cadastro</h1>
+  <div>
   <br>
 
     <form>
-      <label>Primeiro Nome:</label>
-      <input type="text" nome="firstname" id="nome" placeholder=" Insira seu nome" maxlength="25" minlength="10" required>
-      <br>
-      <br>
-      <input type="text" nome="firstname" id="nome" placeholder=" Insira seu nome" maxlength="25" minlength="10" required>
-    </form>
-    <form action="">
-      <label>CPF</label><input type="text" name="" id="" maxlength="14" minlength="14" placeholder="Digite seu CPF"
+
+      <fieldset class="grupo">
+          <div class="campo">
+            <label form="nome"><strong>Nome</strong></label>
+            <input type="text" nome="firstname" id="nome" placeholder=" Insira seu nome" maxlength="25" required>
+          </div>
+
+          <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" nome="firstname" id="nome" placeholder=" Insira seu sobre nome" maxlength="25" required>
+          </div>      
+        </fieldset>
+        
+        <fieldset class="grupo">
+        <div class="campo">
+          <label for="cpf"><strong>CPF</strong></label>
+          <input type="character" name="" id="" maxlength="14" minlength="14" placeholder="Digite seu CPF"
         required>
-    </form>
-    <form>
-      <label>Telefone</label>
-      <input type="tel" name="tel" id="tel" placeholder="Digite seu número "required>
-    </form>
-
-    <form action="">
-      <label>Email</label>
-      <input type="email" placeholder="Insira seu E-mail" required>
-    </form>
-   <form>
-    <label>Data de Nascimento:</label>
-    <input type="date" required>
-    </form>
-    <form>
-
-      <label>Sexo:</label>
-      <input type="radio" id="sex" name="cofee" value="male"> Masculino
-      <br>
-      <input checked type="radio" id="sex" name="cofee" value="femele"> Feminino
-      <input checked type="radio" id="ye" name="cofee" value="yes"> Outros
-    </form>
-    <div>
-      <button type="submit">Enviar</button>
-    </div>
-    </main>
-  </fieldset>
+        </div>
   
+
+      <div class="campo">
+        <label for="telefone"><strong>Telefone</strong></label>
+        <input type="tel" name="tel" id="tel" placeholder="Digite seu número "required>
+      </div>
+
+      <div class="campo">
+      <label for="data_nascimento"><strong>Data de Nascimento</strong></label>
+      <input type="date" required>
+      </div>
+
+      <div class="campo">
+        <label form="email"><strong>E-mail</strong></label>
+        <input type="email" placeholder="Insira seu e-mail" required>
+      </div>
+      
+        </fieldset>
+        
+        
+        <div class="campo">
+          <label for="rua"><strong>Endereço</strong></label>
+          <input type="text" placeholder="Ensira o seu endereço" maxlength="25" required>
+        </div>
+        
+        <div class="campo">
+          <label for="rua"><strong>Logadouro</strong></label>
+          <input type="text" placeholder="Ensira o logadouro" maxlength="25" required>
+        </div>
+
+        <div class="campo">
+          <label for="cep"><strong>CEP</strong></label>
+          <input type="character" placeholder="Ensira o seu CEP" maxlength="25" required>
+        </div>
+        
+        <div class="campo">
+          <label for="cep"><strong>Numero da Residencia</strong></label>
+          <input type="character" placeholder="Número da residencia" maxlength="25" required>
+        </div>
+        
+        <div class="campo">
+          <label for="bairro"><strong>Bairro</strong></label>
+          <select id="bairro" required>
+            <option selected disabled value="text">Selecione</option>  
+            <option>Adrianópolis</option>
+            <option>Aleixo</option>
+            <option>Alvorada</option>
+            <option>Armando Mendes</option>
+            <option>Betânia</option>
+            <option>Cachoeirinha</option>
+            <option>Centro</option>
+            <option>Chapada</option>
+            <option>Cidade de Deus</option>
+            <option>Cidade Nova</option>
+            <option>Colônia Antônio</option>
+            <option>Colônia Antônio</option>
+            <option>Colônia Oliveira Machado</option>
+            <option>Colônia Terra Nova</option>
+            <option>Colônia Terra Nova</option>
+            <option>Compensa</option>
+            <option>Coroado</option>
+            <option>Crespo</option>
+            <option>Da Paz</option>
+            <option>Distrito Industrial I</option>
+            <option>Distrito Industrial II</option>
+            <option>Don Pedro</option>
+            <option>Educandos</option>
+            <option>Flores</option>
+            <option>Gilberto Mestrinho</option>
+            <option>Glória </option>
+            <option>Japiim</option>
+            <option>Jorge Teixeira </option>
+            <option>Lago Azul</option>
+            <option>Lírio do Vale </option>
+            <option>Mauazinho </option>
+            <option>Monte das Oliveiras </option>
+            <option>Morro da Liberdade</option>
+            <option>Nossa Senhora Aparecida</option>
+            <option>Nossa Senhora das Graças</option>
+            <option>Nova Cidade</option>
+            <option>Nova Esperança</option>
+            <option>Novo Israel</option>
+            <option>Parque 10 de Novembro </option>
+            <option>Petrópolis</option>
+            <option> Planalto</option>
+            <option>Ponta Negra </option>
+            <option>Praça 14 de Janeiro </option>
+            <option>Presidente Vargas </option>
+            <option>Puraquequara </option>
+            <option>Raiz </option>
+            <option>Redenção </option>
+            <option>Santa Etelvina </option>
+            <option> Santa Luzia</option>
+            <option>Santo Agostinho </option>
+            <option>Santo Antônio </option>
+            <option>São Francisco </option>
+            <option>São Geraldo </option>
+            <option>São Jorge </option>
+            <option> São José Operário</option>
+            <option>São Lázaro </option>
+            <option>São Raimundo </option>
+            <option>Tancredo Neves </option>
+            <option>Tarumã </option>
+            <option>Tarumã-Açu </option>
+            <option>Vila Buriti</option>
+            <option>Vila da Prata</option>
+            <option>Zumbi dos Palmares</option>
+
+          </select>
+      </div>
+          
+        </div>
+        
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="Sexo"><strong>Sexo</strong></label>
+              <label>
+                <input checked type="radio" name="sexo" value="Masculimo"> Masculino
+                <input checked type="radio" name="sexo" value="Feminino"> Feminino
+                <input checked type="radio" name="sexo" value="Outros"> Outros
+            </div>
+        </fieldset>
+
+      <button class="botao" type="submit" onsubmit="">Enviar</button>
+
+</form>
 </body>
 </html>

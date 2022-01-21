@@ -1,10 +1,13 @@
 * {
-  margin: 0px;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   padding: 0;
   margin: 0;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1em;
 }
 
 h1{
@@ -127,45 +130,75 @@ p {
   
 }
 
-label{
+.campo label{
   font-family:'Nunito', sans-serif;
   font-size: 18px;
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
   margin: 5px;
   font-size: 18px;
-  color: rgba(89, 89, 89, 0.5);
+  color: black;
   font-family: 'Nunito', sans-serif;
+  margin-bottom: 0.2em;
   
 }
-div, form,label{
+
+.campo {
+  clear: both;
+}
+.campo{
+  margin-bottom: 1em;
+  display:inline-block;
+  margin-right: 0.5cm;
+  ;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo input[type="character"], .campo select{
+  box-shadow: 2px 2px 2px rgba(88, 154, 216, 0.363);
+  border-style: none;
   text-align: center;
-  
+
+
 }
-a, img{
+div, form{
+  text-align: center;
+}
+option, select{
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+  
+  
+
+a{
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
   text-align: center;
   
 }
 
-input{
+.campo input{
   padding: 15px;
-  border-radius: 0.5em;
+  border-radius: 5px;
   font-size: 15px;
-  width: 60;
 }
 
-button{
+.botao{
   border-radius: 0.5em;
-  font-size: 15px;
-  padding: 9px;
+  font-size: 1.2em;
+  padding: 0.2em 0.6em;
   background: cornflowerblue;
   border: currentColor;
   color: #ffffff;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+
+
 }
 
 
@@ -221,9 +254,22 @@ main{
   display: flexbox;
 }
 
-fieldset{
-height: 40%;
+fieldset.grupo {
+border: 0;
 }
+
+fieldset.grupo2 {
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: auto;
+  border-radius: 0.5em;
+  display: inline-block;
+
+
+  }
+
+
+
 
 .senha1{
    border-radius: 0.5em;
