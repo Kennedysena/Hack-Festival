@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,42 +10,49 @@
 
   <!-- Título da Página na Aba-->
   <title>ReportAm</title>
-</head>
+<header class="header">
+  <div class="row" style="background: #00696f; height: 36px;">
+  <div class="container text-right">
+  <a href="https://www.facebook.com/immu.manaus" target="_blank"><img src="/img/facebook-branco.png" alt style="margin-top: 5px; width: 24px; height: 24px;"></a>
+  <a href="https://www.instagram.com/immu_manaus/" target="_blank"><img src="/img/instagram-branco.png"alt style="margin-top: 5px; width: 24px; height: 24px;"></a>
+  <a href="https://twitter.com/immu_manaus" target="_blank">
+    <img  src="/img/twitter-branco.png" alt style="margin-top: 5px; width: 24px; height: 24px;"></a>
+  </div>
+  </div>
+  <div class="imagem-linhas">
+    <div class="container">
+      <a href="http://127.0.0.1:5500/cadastra.html">
+      <img class="imagem-prefeitura" src="https://immu.manaus.am.gov.br/images/prefeituralogo.png" alt>
+    </a>
+      <img class="imagem-servicos" src="https://immu.manaus.am.gov.br/images/servicoslogo.png" alt>
+      </a>
+      </div>
+    </div>
+
+  </div>
+</header>
 
 <body>
-  <!-- Cabeçalho e titulo da pagina -->
-  <div class="container">
-    <img src="/img/Reportam.png" alt="" height="">
 
-    <img src="/img/prefeituralogo.png" alt="" srcset="" height="60px">
-  </div>
-  <nav>
-    <li></li>
-    <ul></ul>
-  </nav>
-  <br>
+  <nav class="navbar"></nav>
+
+  <h1 class="title">Cadastro Usuario</h1>
+  
 <main>
 
-  <div>
-  <h1>Faça o seu cadastro</h1>
-  <div>
-  <br>
 
     <form>
+      
 
-      <fieldset class="grupo">
-          <div class="campo">
+      <fieldset>
+
+
+          <div class="campo" >
             <label form="nome"><strong>Nome</strong></label>
-            <input type="text" nome="firstname" id="nome" placeholder=" Insira seu nome" maxlength="25" required>
-          </div>
+            <input type="text" nome="firstname" id="nome" placeholder=" Insira seu nome completo" maxlength="25" autocomplete="additional-name" required>
 
-          <div class="campo">
-            <label for="sobrenome"><strong>Sobrenome</strong></label>
-            <input type="text" nome="firstname" id="nome" placeholder=" Insira seu sobre nome" maxlength="25" required>
-          </div>      
-        </fieldset>
+          </div>   
         
-        <fieldset class="grupo">
         <div class="campo">
           <label for="cpf"><strong>CPF</strong></label>
           <input type="character" name="" id="" maxlength="14" minlength="14" placeholder="Digite seu CPF"
@@ -70,7 +77,7 @@
       
         </fieldset>
         
-        
+        <fieldset class="grupo1">
         <div class="campo">
           <label for="rua"><strong>Endereço</strong></label>
           <input type="text" placeholder="Ensira o seu endereço" maxlength="25" required>
@@ -88,7 +95,7 @@
         
         <div class="campo">
           <label for="cep"><strong>Numero da Residencia</strong></label>
-          <input type="character" placeholder="Número da residencia" maxlength="25" required>
+          <input type="character"  autocomplete=""   placeholder="Número da residencia" maxlength="25" required>
         </div>
         
         <div class="campo">
@@ -160,10 +167,10 @@
             <option>Zumbi dos Palmares</option>
           </select>
       </div>
-          
+
         </div>
         
-        <fieldset class="grupo">
+
             <div class="campo">
                 <label for="Sexo"><strong>Sexo</strong></label>
               <label>
@@ -171,8 +178,8 @@
                 <input checked type="radio" name="sexo" value="Feminino"> Feminino
                 <input checked type="radio" name="sexo" value="Outros"> Outros
             </div>
-        </fieldset>
 
+      </fieldset>
       <button class="botao" type="submit" onsubmit="">Enviar</button>
 
 </form>

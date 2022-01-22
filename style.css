@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
+
 body{
   padding: 0;
   margin: 0;
@@ -10,124 +13,69 @@ body{
   font-size: 1em;
 }
 
-h1{
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-right{
+  text-align: center;
+}
+.imagem-linhas{
+  background-color: #00B3B5;
+  background-image: url(https://immu.manaus.am.gov.br/images/aptimized-png-6A90B71D637ACD4B6D56AF4C41C95011-MzU0UeZS1s$MTUxPLdbPyczLSCzWK8hLBwA=-2185fb31.png);
+  background-repeat: repeat-x;
+  background-position-x: right;
+  background-size:contain;
+  height: 150px;
+
+}
+.imagem-prefeitura{
+  top: 30px;
+  height: 80px;
+  position: relative;
+  float: left;
+
+}
+div{
+  display: block;
+}
+.imagem-servicos{
+  top: 37px;
+  height: 80px;
+  position:relative;
+  float: right;
+  right: auto;
+}
+img{
+  vertical-align: middle;
+}
+img{
+  border: 0;
+}
+  .navbar{
+    background-image: url(https://immu.manaus.am.gov.br/images/aptimized-png-1E2E03ED338B9E4E4C2872CAE65E017F-MzU0UeZS1s$MTUxPLdZPS8ysSNQryEsHAA==-870dc341.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    color: white;
+  
+  }
+
+.title{
   display: flex;
   align-items: center;
   flex-direction: column;
   color: #00696F ;
   font-style: normal;
   font-family: 'Source Code Pro', monospace;
-}
-header{
-  background-color:#00696F;
-  text-align: center;
-  width: 100%;
-  padding: 5px;
-}
-
-.container{
-  text-align: center;
-  padding: 10px;
-  width: 200;
-  background-color: #00B3B5;
-  background-image: url(https://immu.manaus.am.gov.br/images/aptimized-png-6A90B71D637ACD4B6D56AF4C41C95011-MzU0UeZS1s$MTUxPLdbPyczLSCzWK8hLBwA=-2185fb31.png);
-  background-repeat: repeat-x;
-  background-position-x: right;
-  background-size:contain;
-}
-  nav{
-    display: block;
-    background: #2b327e;
-    background-image: url(https://immu.manaus.am.gov.br/images/aptimized-png-1E2E03ED338B9E4E4C2872CAE65E017F-MzU0UeZS1s$MTUxPLdZPS8ysSNQryEsHAA==-870dc341.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position-x: right;
-  }
-
-
-.email{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin: 5px;
-  font-size: 18px;
-  color: rgba(89, 89, 89, 0.5);
-  font-family: 'Nunito', sans-serif;
-  border-radius: 10px;
-
-}
-
-.continuar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  width: 100%;
-  padding: 1.3rem 0;
-  border: 1px solid lightgray;
-}
-.login{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  font-size: 19px;
-  font-family: 'Nunito', sans-serif;
-
-}
-p {
-
-  text-align: right;
-
-}
-
-
-#formulario{
-  font-family: 'Nunito', sans-serif;
-  color: rgba(89, 89, 89, 0.5);
-}
-
-.login2{
-  display: flex;
-  
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin: 5px;
-  font-size: 18px;
-  color: rgba(89, 89, 89, 0.5);
-  font-family: 'Nunito', sans-serif;
-  
-}
-.corpo{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  margin: 5px;
-  font-size: 18px;
-  margin-right: 100px;
-}
-.formulario{
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin: 5px;
-  font-size: 18px;
-  color: rgba(89, 89, 89, 0.5);
-  
-  
-}
-
-.logo{
-  top: 6px;
-  height: 2px;
-  text-align: left;
-  
+  margin: 20px;
+  margin-top: 20px;
 }
 
 .campo label{
@@ -151,42 +99,36 @@ p {
 }
 .campo{
   margin-bottom: 1em;
-  display:inline-block;
-  margin-right: 0.5cm;
+  margin-right: auto;
   ;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo input[type="character"], .campo select{
   box-shadow: 2px 2px 2px rgba(88, 154, 216, 0.363);
   border-style: none;
-  text-align: center;
+  text-align: left;
 
 
 }
 div, form{
   text-align: center;
+
 }
 option, select{
   padding: 15px;
   border-radius: 5px;
   font-size: 15px;
-  text-align: center;
+  text-align:left;
   
 }
   
   
-
-a{
-  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
-  text-align: center;
-  
-}
 
 .campo input{
   padding: 15px;
   border-radius: 5px;
   font-size: 15px;
+  width: 300px;
 }
 
 .botao{
@@ -217,35 +159,21 @@ ul{
   
   
 }
-li{
-  float: center;
-  text-decoration:none;
-  text-align: center;
-  padding: 5px;
+.navbar{
   height: 50px ;
-  font-size: 15px;
-  font-family: 'Nunito', sans-serif;
-  margin-left: 20px;
-  margin-right: 20px ;
-  display: block;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position-x: right;
   
 }
 
 li a{
   display: block;
   text-align: center;
+
   
 }
 
-footer{
-  position:fixed;
-  background-color:#00B3B5;
-  width: 100%;
-  padding: 10px;
-  color: #ffffff;
-  left: 0;
-  bottom: 0;
-}
 section{
   text-align: right;
   font-size: 15px;
@@ -255,28 +183,28 @@ main{
   display: flexbox;
 }
 
-fieldset.grupo {
-border: 0;
-}
 
-fieldset.grupo2 {
+.grupo {
   margin-right: 60px;
   margin-left: 60px;
   margin-top: auto;
   border-radius: 0.5em;
-  display: inline-block;
-
-
-  }
-
-
-
-
-.senha1{
-   border-radius: 0.5em;
-  font-size: 15px;
-  padding: 9px;
-
-  border: currentColor;
-  color: #ffffff;
 }
+fieldset{
+  margin-left: 60px;
+  margin-right:  60px;
+  border-radius: 0.5em;
+  border: 1px solid #00696F;
+  margin-top: 20px;
+
+  
+
+}
+  
+
+
+
+
+
+
+
