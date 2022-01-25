@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--  Link CSS-->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  
 
   <!-- Título da Página na Aba-->
-  <title>ReportAm</title>
+  <title>IMMU ReportAM</title>
+
+  <!-- Cabeçalho de informações da página com as devidas redes sociais-->
 <header class="header">
   <div class="row" style="background: #00696f; height: 36px;">
   <div class="container text-right">
@@ -19,6 +22,7 @@
     <img  src="/img/twitter-branco.png" alt style="margin-top: 5px; width: 24px; height: 24px;"></a>
   </div>
   </div>
+  <!-- Segundo cabeçalho da página contendo imagens do logo da Prefeitura e do IMMU-->
   <div class="imagem-linhas">
     <div class="container">
       <a href="http://127.0.0.1:5500/cadastra.html">
@@ -28,29 +32,27 @@
       </a>
       </div>
     </div>
-
   </div>
 </header>
 
 <body>
-
-  <nav class="navbar"></nav>
-
-  <h1 class="title">Cadastro Usuario</h1>
+  <!--Barra colorida-->
+  <nav class="navbar">
+  </nav>
+<!-- Titulo da página no corpo dela-->
+  <h1 class="title">Cadastro de Usuario</h1>
   
 <main>
 
-
+<!-- Criaçao do formulario com as devidos imput de dados-->
     <form>
       
 
-      <fieldset>
+      <fieldset class="grupo">
 
-
-          <div class="campo" >
+          <div class="campo">
             <label form="nome"><strong>Nome</strong></label>
             <input type="text" nome="firstname" id="nome" placeholder=" Insira seu nome completo" maxlength="25" autocomplete="additional-name" required>
-
           </div>   
         
         <div class="campo">
@@ -75,9 +77,6 @@
         <input type="email" placeholder="Insira seu e-mail" required>
       </div>
       
-        </fieldset>
-        
-        <fieldset class="grupo1">
         <div class="campo">
           <label for="rua"><strong>Endereço</strong></label>
           <input type="text" placeholder="Ensira o seu endereço" maxlength="25" required>
@@ -167,21 +166,15 @@
             <option>Zumbi dos Palmares</option>
           </select>
       </div>
-
-        </div>
-        
-
-            <div class="campo">
-                <label for="Sexo"><strong>Sexo</strong></label>
-              <label>
-                <input checked type="radio" name="sexo" value="Masculimo"> Masculino
-                <input checked type="radio" name="sexo" value="Feminino"> Feminino
-                <input checked type="radio" name="sexo" value="Outros"> Outros
-            </div>
-
       </fieldset>
-      <button class="botao" type="submit" onsubmit="">Enviar</button>
 
-</form>
+      <button class="botao" type="submit" onsubmit="">Enviar</button>
+    </form>
+    
+      <footer>
+        <div class="faixa-rodape">
+      </footer>
+
+
 </body>
 </html>
